@@ -65,21 +65,21 @@ form textarea {
   font-size: 1em;
 }
 
-form button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background-color: #b23030;
+.telegram-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #0088cc;
   color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-form button:hover {
-  background-color: #a02020;
+.telegram-button:hover {
+  background-color: #006699;
 }
+
 
 .response-message {
   margin-top: 15px;
