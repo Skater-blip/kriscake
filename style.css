@@ -1,100 +1,88 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff8f5;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f0;
+  color: #3b2f2f;
   margin: 0;
   padding: 0;
-  color: #333;
 }
 
 header {
-  background-color: #ffb6c1;
+  background-color: #f4c4c4;
+  padding: 20px;
   text-align: center;
-  padding: 2rem 1rem;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 header p {
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
+  margin: 5px 0;
+  font-size: 1.2em;
 }
 
-header a {
+.instagram-link {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: white;
-  color: #ff69b4;
+  margin-top: 10px;
   text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
+  color: #b23030;
 }
 
-main {
+.gallery {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.category h3 {
+  color: #b23030;
+}
+
+.order {
   max-width: 500px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  background: #fff0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-top: 1rem;
-  margin-bottom: 0.3rem;
+form label {
   font-weight: bold;
+  display: block;
+  margin-top: 15px;
 }
 
-input, select, textarea {
-  padding: 0.7rem;
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 5px;
+  font-size: 1em;
 }
 
-textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-button {
-  margin-top: 1.5rem;
-  padding: 0.8rem;
-  background-color: #ff69b4;
+form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #b23030;
   color: white;
-  font-size: 1.1rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
+  font-size: 1em;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #e055a3;
+form button:hover {
+  background-color: #a02020;
 }
 
-.telegram-photo {
+.response-message {
+  margin-top: 15px;
   text-align: center;
-  margin: 3rem 1rem;
-  padding: 1rem;
-  background-color: #fff0f6;
-  border-top: 2px dashed #ffb6c1;
-}
-
-.telegram-photo h2 {
-  margin-bottom: 0.5rem;
-}
-
-.telegram-photo a {
-  color: #d63384;
   font-weight: bold;
-  text-decoration: none;
 }
