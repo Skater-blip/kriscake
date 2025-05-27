@@ -1,39 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KrisCake - Бенто-торти на замовлення</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KrisCake — Замовлення бенто-тортиків</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>KrisCake</h1>
-        <p>Милий бенто-тортик, який говорить замість тебе</p>
-    </header>
+  <header>
+    <h1>KrisCake</h1>
+    <p>Бенто-торти з настроєм</p>
+    <a href="https://www.instagram.com/kriscake_lviv/" target="_blank" class="instagram-link">Instagram @kriscake_lviv</a>
+  </header>
 
-    <section class="gallery">
-        <img src="https://via.placeholder.com/150" alt="Торт 1">
-        <img src="https://via.placeholder.com/150" alt="Торт 2">
-        <img src="https://via.placeholder.com/150" alt="Торт 3">
-    </section>
+  <section class="gallery">
+    <h2>Галерея тортів</h2>
 
-    <section class="form-section">
-        <h2>Зробити замовлення</h2>
-        <form id="orderForm">
-            <input type="text" name="name" placeholder="Ваше ім’я" required>
-            <input type="text" name="phone" placeholder="Номер телефону" required>
-            <input type="text" name="cake" placeholder="Опис тортика (надпис, начинка)" required>
-            <button type="submit">Надіслати</button>
-        </form>
-        <p id="status"></p>
-    </section>
+    <div class="category">
+      <h3>Бенто 500 грам</h3>
+      <div class="photos" id="gallery-500g">
+        <p>Фото з’являться тут пізніше</p>
+      </div>
+    </div>
 
-    <footer>
-        <p>© 2025 KrisCake</p>
-    </footer>
+    <div class="category">
+      <h3>Бенто 1 кг</h3>
+      <div class="photos" id="gallery-1kg">
+        <p>Фото з’являться тут пізніше</p>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="category">
+      <h3>Bento To Go</h3>
+      <div class="photos" id="gallery-togo">
+        <p>Фото з’являться тут пізніше</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <h2>Замовити торт</h2>
+    <form id="order-form">
+      <label for="cakeType">Тип тортика:</label>
+      <select id="cakeType" name="cakeType" required>
+        <option value="">Оберіть тип тортика</option>
+        <option value="Бенто 500 грам">Бенто 500 грам</option>
+        <option value="Бенто 1 кг">Бенто 1 кг</option>
+        <option value="Bento To Go">Bento To Go</option>
+      </select>
+
+      <label for="filling">Начинка:</label>
+      <select id="filling" name="filling" required>
+        <option value="">Оберіть начинку</option>
+        <option value="Малина">Малина</option>
+        <option value="Банан карамель">Банан карамель</option>
+        <option value="Снікерс">Снікерс</option>
+        <option value="Орео">Орео</option>
+        <option value="Манго-маракуйя">Манго-маракуйя</option>
+        <option value="Вишня-кокос">Вишня-кокос</option>
+        <option value="Нутелла-фундук">Нутелла-фундук</option>
+        <option value="Рафаелло">Рафаелло</option>
+      </select>
+
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" placeholder="Ваше ім'я" required />
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+380..." pattern="\+380\d{9}" required />
+
+      <label for="comment">Коментар (необов’язково):</label>
+      <textarea id="comment" name="comment" rows="3" placeholder="Додаткові побажання"></textarea>
+
+      <button type="submit">Надіслати замовлення</button>
+    </form>
+    <p id="response-message" class="response-message"></p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
