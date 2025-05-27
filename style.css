@@ -80,6 +80,21 @@ form textarea {
   background-color: #006699;
 }
 
+.telegram-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #0088cc;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.telegram-button:hover {
+  background-color: #006679;
+}
+
 
 .response-message {
   margin-top: 15px;
