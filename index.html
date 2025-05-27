@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrisCake - Бенто-торти на замовлення</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KrisCake</h1>
+        <p>Милий бенто-тортик, який говорить замість тебе</p>
+    </header>
+
+    <section class="gallery">
+        <img src="https://via.placeholder.com/150" alt="Торт 1">
+        <img src="https://via.placeholder.com/150" alt="Торт 2">
+        <img src="https://via.placeholder.com/150" alt="Торт 3">
+    </section>
+
+    <section class="form-section">
+        <h2>Зробити замовлення</h2>
+        <form id="orderForm">
+            <input type="text" name="name" placeholder="Ваше ім’я" required>
+            <input type="text" name="phone" placeholder="Номер телефону" required>
+            <input type="text" name="cake" placeholder="Опис тортика (надпис, начинка)" required>
+            <button type="submit">Надіслати</button>
+        </form>
+        <p id="status"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 KrisCake</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
